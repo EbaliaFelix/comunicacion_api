@@ -2,7 +2,7 @@ const btn = document.getElementById("cargarBtn");
 const contenedor = document.getElementById("contenedor");
 const apiKey = "395f3abc3cfa6bf9cb5cd50c9de0e266";
 
-btn.addEventListener("click", obtenerUsuarios);
+btn.addEventListener("click", buscarPeliculas);
 
 async function buscarPeliculas() {
   const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=cultura`;
