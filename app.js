@@ -35,4 +35,3 @@ function mostrarPeliculas(peliculas) {
   });
 }
 
-buscarPeliculas();
