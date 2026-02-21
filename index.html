@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Consumo de API</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <title>Consumo API con Fetch</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <h1>Lista de Películas</h1>
-  <button id="cargarBtn">Cargar Películas</button>
+  <h1>Consumo de API Pública</h1>
 
-  <div id="contenedor" class="grid"></div>
+  <button onclick="consultarAPI()">Consultar API</button>
 
-  <script src="app.js"></script>
+  <pre id="resultado"></pre>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
