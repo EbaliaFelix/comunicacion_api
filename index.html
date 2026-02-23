@@ -2,18 +2,32 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Consumo API con Fetch</title>
+  <title>Mini App - Consumo de APIs</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <h1>Consumo de API Pública</h1>
+  <div class="container">
+    <h1>Mini Aplicación con Fetch</h1>
+    <p>Selecciona una API para consultar datos:</p>
 
-  <button onclick="consultarAPI()">Consultar API</button>
+    <div class="buttons">
+      <button data-url="https://api.github.com/users/octocat">
+        Usuario GitHub
+      </button>
 
-  <pre id="resultado"></pre>
+      <button data-url="https://api.open-meteo.com/v1/forecast?latitude=21.5&longitude=-104.9&current_weather=true">
+        Clima Tepic
+      </button>
+
+      <button data-url="https://dog.ceo/api/breeds/image/random">
+        Imagen de Perro
+      </button>
+    </div>
+
+    <pre id="resultado">Aquí aparecerán los datos...</pre>
+  </div>
 
   <script src="app.js"></script>
-
 </body>
 </html>
