@@ -39,11 +39,34 @@ button {
 button:hover {
   background-color: #45a049;
 }
+ /*---Nuevo estilo para tabla---*/
+ 
+ table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
 
-pre {
-  background: #1e1e1e;
-  color: #00ff99;
-  padding: 15px;
-  border-radius: 6px;
-  overflow-x: auto;
+th {
+  background-color: #333;
+  color: white;
+  padding: 8px;
+  text-align: left;
+}
+
+td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Imagen del perro */
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  border-radius: 10px;
 }
