@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  background: rgb(157, 157, 157);
+  background: rgb(225, 220, 220);
   padding: 30px;
   border-radius: 10px;
   width: 700px;
@@ -49,8 +49,8 @@ button:hover {
 }
 
 th {
-  background-color: #686666;
-  color: rgb(203, 202, 202);
+  background-color: #878181;
+  color: rgb(245, 239, 239);
   padding: 8px;
   text-align: left;
 }
