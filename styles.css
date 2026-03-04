@@ -1,5 +1,6 @@
 body {
   font-family: Arial, sans-serif;
+  color: rgb(206, 201, 201); 
   background-color: #a29c9cfe;
   display: flex;
   justify-content: center;
@@ -11,7 +12,7 @@ body {
   padding: 30px;
   border-radius: 10px;
   width: 700px;
-  box-shadow: 0 4px 10px rgba(92, 63, 101, 0.145);
+  box-shadow: 0 4px 10px rgba(90, 61, 98, 0.264);
 }
 
 h1 {
