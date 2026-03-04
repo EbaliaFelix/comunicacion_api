@@ -49,7 +49,7 @@ button:hover {
 }
 
 th {
-  background-color: #b4afaf;
+  background-color: #686666;
   color: rgb(203, 202, 202);
   padding: 8px;
   text-align: left;
@@ -57,7 +57,7 @@ th {
 
 td {
   padding: 8px;
-  border-bottom: 1px solid #b2afaf;
+  border-bottom: 1px solid #675959;
 }
 
 tr:nth-child(even) {
