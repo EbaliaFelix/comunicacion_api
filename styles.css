@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #3a3a3a32;
+  background-color: #7c7575fe;
   display: flex;
   justify-content: center;
   padding: 40px;
@@ -57,9 +57,9 @@ th {
 
 td {
   padding: 8px;
-  border-bottom: 1px solid #7a7777;
+  border-bottom: 1px solid #757272;
 }
 
 tr:nth-child(even) {
-  background-color: #413e3e;
+  background-color: #9c9999;
 }
