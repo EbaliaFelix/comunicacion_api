@@ -106,3 +106,18 @@ function crearTablaObjeto(objeto) {
   tabla.appendChild(cuerpo);
   resultado.appendChild(tabla);
 }
+///////////////////////////////////////////
+
+const form = document.getElementById("formBusqueda");
+const inputBusqueda = document.getElementById("busqueda");
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault(); // evita recarga
+
+  const usuario = inputBusqueda.value.trim();
+
+  if (usuario !== "") {
+    const url = `https://api.github.com/users/${usuario}`;
+    consultarAPI(url);
+  }
+});
