@@ -1,5 +1,5 @@
 const resultado = document.getElementById("resultado");
-const botones = document.querySelectorAll("button");
+const botones = document.querySelectorAll(".buttons button");
 
 botones.forEach(boton => {
   boton.addEventListener("click", () => {
@@ -8,7 +8,7 @@ botones.forEach(boton => {
   });
 });
 
-async function consultarAPI(url) {
+async function consultarServicioscombinados(usuarios) {
   try {
     resultado.textContent = "Cargando datos...";
 
@@ -106,8 +106,55 @@ function crearTablaObjeto(objeto) {
   tabla.appendChild(cuerpo);
   resultado.appendChild(tabla);
 }
-///////////////////////////////////////////
 
+///////////////////////////////////////////
+async function consultarServiciosCombinados(usuario) {
+  try {
+
+    resultado.textContent = "Consultando múltiples servicios...";
+
+    const urlGitHub = `https://api.github.com/users/${usuario}`;
+    const urlClima = "https://api.open-meteo.com/v1/forecast?latitude=21.5&longitude=-104.9&current_weather=true";
+
+    // Ejecutamos ambas consultas al mismo tiempo
+    const [gitResponse, climaResponse] = await Promise.all([
+      fetch(urlGitHub),
+      fetch(urlClima)
+    ]);
+
+    if (!gitResponse.ok || !climaResponse.ok) {
+      throw new Error("Error en una de las APIs");
+    }
+
+    const gitData = await gitResponse.json();
+    const climaData = await climaResponse.json();
+
+    // FILTRADO
+    const repos = gitData.public_repos;
+    const followers = gitData.followers;
+    const temperatura = climaData.current_weather.temperature;
+
+    // SUMA
+    const totalActividad = repos + followers;
+
+    // MOSTRAR RESULTADO
+    resultado.innerHTML = `
+      <h3>Resumen Combinado</h3>
+      <table>
+        <tr><th>Usuario</th><td>${gitData.login}</td></tr>
+        <tr><th>Repositorios</th><td>${repos}</td></tr>
+        <tr><th>Seguidores</th><td>${followers}</td></tr>
+        <tr><th>Total Actividad</th><td>${totalActividad}</td></tr>
+        <tr><th>Temperatura en Tepic</th><td>${temperatura} °C</td></tr>
+      </table>
+    `;
+
+  } catch (error) {
+    resultado.innerHTML = "Error al consultar servicios combinados.";
+    console.error(error);
+  }
+}
+//////////////////////////////////////////
 const form = document.getElementById("formBusqueda");
 const inputBusqueda = document.getElementById("busqueda");
 
@@ -117,7 +164,6 @@ form.addEventListener("submit", function(e) {
   const usuario = inputBusqueda.value.trim();
 
   if (usuario !== "") {
-    const url = `https://api.github.com/users/${usuario}`;
-    consultarAPI(url);
+    consultarServiciosCombinados(usuario);
   }
 });
