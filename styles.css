@@ -1,13 +1,13 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #07000032;
+  background-color: #3a3a3a32;
   display: flex;
   justify-content: center;
   padding: 40px;
 }
 
 .container {
-  background: rgb(95, 93, 93);
+  background: rgb(93, 92, 92);
   padding: 30px;
   border-radius: 10px;
   width: 700px;
@@ -49,7 +49,7 @@ button:hover {
 }
 
 th {
-  background-color: #b4b3b3;
+  background-color: #605c5c;
   color: rgb(245, 239, 239);
   padding: 8px;
   text-align: left;
@@ -57,9 +57,9 @@ th {
 
 td {
   padding: 8px;
-  border-bottom: 1px solid #545151;
+  border-bottom: 1px solid #3f3d3d;
 }
 
 tr:nth-child(even) {
-  background-color: #b4afaf;
+  background-color: #636161;
 }
