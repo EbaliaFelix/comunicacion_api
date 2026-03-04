@@ -1,17 +1,17 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f2f5;
+  background-color: #3e3e3e;
   display: flex;
   justify-content: center;
   padding: 40px;
 }
 
 .container {
-  background: white;
+  background: rgb(35, 35, 35);
   padding: 30px;
   border-radius: 10px;
   width: 700px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(120, 114, 114, 0.014);
 }
 
 h1 {
@@ -30,14 +30,14 @@ button {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  background-color: #4CAF50;
-  color: white;
+  background-color: #23122d;
+  color: rgb(222, 219, 219);
   font-weight: bold;
   transition: 0.2s;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #2a1234;
 }
  /*---Nuevo estilo para tabla---*/
  
@@ -56,11 +56,11 @@ th {
 
 td {
   padding: 8px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #737272;
 }
 
 tr:nth-child(even) {
-  background-color: #f9f9f9;
+  background-color: #8d8b8b;
 }
 
 /* Imagen del perro */

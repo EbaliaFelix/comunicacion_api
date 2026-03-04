@@ -2,35 +2,22 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mini App - Consumo de APIs</title>
+  <title>Usuarios de GitHub</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <div class="container">
-    <h1>Mini Aplicación con Fetch</h1>
-    <p>Selecciona una API para consultar datos:</p>
+    <h1>Encuentra aqui información acerca del numero de repositorios, actividad y seguidores de cada usuario</h1>
+    <p>Resultado</p>
 
-    <div class="buttons">
-      <button data-url="https://api.github.com/users/octocat">
-        Usuario GitHub
-      </button>
-
-      <button data-url="https://api.open-meteo.com/v1/forecast?latitude=21.5&longitude=-104.9&current_weather=true">
-        Clima Tepic
-      </button>
-
-      <button data-url="https://dog.ceo/api/breeds/image/random">
-        Imagen de Perro
-      </button>
-    </div>
-
+   
   <form id="formBusqueda">
     <input type="text" id="busqueda" placeholder="Buscar usuario GitHub">
     <button type="submit">Buscar</button>
   </form>
 
-    <div id="resultado">Aquí aparecerán los datos...</div>
+    <div id="resultado">Cargando información...</div>
   </div>
 
   <script src="app.js"></script>
