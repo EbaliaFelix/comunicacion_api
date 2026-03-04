@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  background: rgb(225, 220, 220);
+  background: rgb(95, 93, 93);
   padding: 30px;
   border-radius: 10px;
   width: 700px;
@@ -32,7 +32,7 @@ button {
   border-radius: 6px;
   cursor: pointer;
   background-color: #451c5bcb;
-  color: rgb(222, 219, 219);
+  color: rgb(174, 172, 172);
   font-weight: bold;
   transition: 0.2s;
 }
@@ -49,7 +49,7 @@ button:hover {
 }
 
 th {
-  background-color: #878181;
+  background-color: #b4b3b3;
   color: rgb(245, 239, 239);
   padding: 8px;
   text-align: left;
@@ -57,7 +57,7 @@ th {
 
 td {
   padding: 8px;
-  border-bottom: 1px solid #675959;
+  border-bottom: 1px solid #454040;
 }
 
 tr:nth-child(even) {
