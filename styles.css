@@ -7,11 +7,11 @@ body {
 }
 
 .container {
-  background: rgb(35, 35, 35);
+  background: rgb(80, 79, 79);
   padding: 30px;
   border-radius: 10px;
   width: 700px;
-  box-shadow: 0 4px 10px rgba(107, 30, 124, 0.014);
+  box-shadow: 0 4px 10px rgba(64, 46, 69, 0.014);
 }
 
 h1 {
@@ -48,7 +48,7 @@ button:hover {
 }
 
 th {
-  background-color: #333;
+  background-color: #807f7f;
   color: white;
   padding: 8px;
   text-align: left;
@@ -56,9 +56,9 @@ th {
 
 td {
   padding: 8px;
-  border-bottom: 1px solid #737272;
+  border-bottom: 1px solid #b2afaf;
 }
 
 tr:nth-child(even) {
-  background-color: #8d8b8b;
+  background-color: #b4afaf;
 }
