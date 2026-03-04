@@ -139,7 +139,7 @@ async function consultarServiciosCombinados(usuario) {
 
     // MOSTRAR RESULTADO
     resultado.innerHTML = `
-      <h3>Resumen Combinado</h3>
+      <h3>Respuesta</h3>
       <table>
         <tr><th>Usuario</th><td>${gitData.login}</td></tr>
         <tr><th>Repositorios</th><td>${repos}</td></tr>
