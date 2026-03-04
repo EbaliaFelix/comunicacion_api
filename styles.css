@@ -11,7 +11,7 @@ body {
   padding: 30px;
   border-radius: 10px;
   width: 700px;
-  box-shadow: 0 4px 10px rgba(64, 46, 69, 0.014);
+  box-shadow: 0 4px 10px rgba(92, 63, 101, 0.145);
 }
 
 h1 {
@@ -31,7 +31,7 @@ button {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  background-color: #3d1951;
+  background-color: #451c5bcb;
   color: rgb(222, 219, 219);
   font-weight: bold;
   transition: 0.2s;
@@ -49,8 +49,8 @@ button:hover {
 }
 
 th {
-  background-color: #807f7f;
-  color: white;
+  background-color: #b4afaf;
+  color: rgb(203, 202, 202);
   padding: 8px;
   text-align: left;
 }
