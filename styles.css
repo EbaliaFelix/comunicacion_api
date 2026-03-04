@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  background: rgb(93, 92, 92);
+  background: rgb(123, 120, 120);
   padding: 30px;
   border-radius: 10px;
   width: 700px;
@@ -49,17 +49,17 @@ button:hover {
 }
 
 th {
-  background-color: #605c5c;
-  color: rgb(245, 239, 239);
+  background-color: #918a8a;
+  color: rgb(206, 201, 201);
   padding: 8px;
   text-align: left;
 }
 
 td {
   padding: 8px;
-  border-bottom: 1px solid #3f3d3d;
+  border-bottom: 1px solid #7a7777;
 }
 
 tr:nth-child(even) {
-  background-color: #636161;
+  background-color: #413e3e;
 }
